@@ -10,9 +10,6 @@
     <div class="banner">
         <p>Rock, Paper, Scissors!!!</p>
     </div>
-    <div class="game_over">
-        <p id="gameSatus"></p>
-    </div>
     <div class="score">
         <div class="score_box">
             <h1>You:</h1>
@@ -28,17 +25,23 @@
         </div>
     </div>
     <div class="selection">
-        <div class="player_box">
+        <div class="player_selection">
+            <p>You Chose:</p>
             <p id="playerSelection"></p>
         </div>
-        <div class="robot_box">
+        <div class="robot_selection">
+            <p>Robot Chose:</p>
             <p id="robotSelection"></p>
         </div>
     </div>
     <div class="choice">
-        <button id="rock">R</button>
-        <button id="paper">P</button>
-        <button id="scissor">S</button>
+        <button id="rock" onclick="getPlayerChoice(0)">R</button>
+        <button id="paper" onclick="getPlayerChoice(1)">P</button>
+        <button id="scissor" onclick="getPlayerChoice(2)">S</button>
+    </div>
+    <div class="game_over" id="game_over">
+        <p class="game_status" id="game_status">Filler Text</p>
+        <button id="restart" onclick="restartGame()">Play Again!</button>
     </div>
     <script src="script.js"></script>
 </head>  
